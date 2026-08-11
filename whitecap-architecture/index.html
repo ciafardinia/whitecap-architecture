@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Whitecap Architecture — Laboratory &amp; Research Architecture</title>
+<meta name="description" content="Whitecap Architecture designs and renovates science labs for universities, medical facilities, and corporate research teams — from feasibility through construction administration.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="site-header">
+  <div class="wa-container">
+    <nav class="nav">
+      <div class="brand-group">
+        <button class="brand-logo-btn" data-goto-page="home" aria-label="Whitecap Architecture — Home">
+          <img src="assets/Logo_Final.png" alt="Whitecap Architecture" class="brand-logo">
+        </button>
+      </div>
+      <button class="wa-navlink" data-goto-page="home">Home</button>
+
+      <div id="expertise-nav">
+        <button class="wa-navlink expertise-btn" id="expertise-toggle" aria-expanded="false" aria-controls="expertise-menu">
+          Expertise
+          <span class="wa-icon" style="width:14px;height:14px"><svg viewBox="0 0 24 24" style="display:block" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span>
+        </button>
+        <div class="expertise-menu blueprint" id="expertise-menu">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <button class="wa-navlink" data-goto-tab="renovations">Architecture – Renovations</button>
+          <button class="wa-navlink" data-goto-tab="new-construction">Architecture – New Construction</button>
+          <button class="wa-navlink" data-goto-tab="interior">Interior Architecture</button>
+          <button class="wa-navlink" data-goto-tab="programming">Programming</button>
+        </div>
+      </div>
+
+      <button class="wa-navlink" data-goto-page="about">About</button>
+      <button class="wa-navlink" data-goto-page="contact">Contact</button>
+      <a class="btn btn-primary nav-call" href="tel:2056018713" style="color:var(--color-bg)">Call 205.601.8713</a>
+    </nav>
+  </div>
+</div>
+
+<!-- HOME -->
+<main class="page" data-page="home">
+  <section class="wa-container" style="padding-block:64px 56px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:start" data-grid="hero">
+    <div>
+      <h1 style="font-size:52px;line-height:1.04;margin-bottom:18px;color:#1D1F20">Laboratory architecture<br>built on precision.</h1>
+      <p style="font-size:17px;opacity:.82;max-width:46ch;margin-bottom:28px">Whitecap Architecture is a one-stop shop of small scale full lab design services for universities, medical facilities, and corporate research teams — from feasibility through construction administration.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="tel:2056018713">Call 205.601.8713</a>
+        <a class="btn btn-secondary" href="mailto:ac@wcarchitecture.com">Email the Studio</a>
+      </div>
+    </div>
+    <div class="blueprint" style="aspect-ratio:4/3;position:relative">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <img src="assets/home-hero.jpg" alt="Laboratory workspace with bench seating and adjustable shelving" style="width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+  </section>
+
+  <section class="wa-container" style="padding-block:8px 56px">
+    <div style="font-family:var(--font-heading);font-weight:600;font-size:13px;line-height:1.12;letter-spacing:.08em;text-transform:uppercase;margin:0 0 6.8px;color:var(--color-accent-text)">Offerings</div>
+    <h2 style="margin-bottom:36px;max-width:28ch">From Feasibility to Construction</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" data-grid="offerings">
+      <div class="card blueprint" style="padding:24px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <span class="wa-icon" style="width:26px;height:26px;color:var(--color-accent)"><svg viewBox="0 0 24 24" style="display:block" aria-hidden="true"><path d="M10 2v6.4L4.5 19.5A2 2 0 0 0 6.3 22h11.4a2 2 0 0 0 1.8-2.5L14 8.4V2"></path><path d="M8.5 2h7"></path><path d="M7 16h10"></path></svg></span>
+        <div class="card-kicker" style="margin-top:14px">01</div>
+        <div class="card-title">Programming</div>
+        <p class="card-body">Programming and space planning for wet labs, dry labs, and shared core facilities. Asking the big questions early. </p>
+        <button class="btn btn-ghost" style="align-self:flex-start;margin-top:6px" data-goto-tab="renovations">Learn more →</button>
+      </div>
+      <div class="card blueprint" style="padding:24px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <span class="wa-icon" style="width:26px;height:26px;color:var(--color-accent)"><svg viewBox="0 0 24 24" style="display:block" aria-hidden="true"><path d="m15 12-8.5 8.5a2.1 2.1 0 1 1-3-3L12 9"></path><path d="M17.6 15 22 10.6"></path><path d="m20.9 11.7-1.2-1.2a3 3 0 0 1-.9-2.2v-.9L16 4.6a5.6 5.6 0 0 0-3.9-1.6H9l.9.8A6.2 6.2 0 0 1 12 8.4V10l2 2Z"></path></svg></span>
+        <div class="card-kicker" style="margin-top:14px">02</div>
+        <div class="card-title">Lab Planning</div>
+        <p class="card-body">Interpreting the lab program and end users' needs into layouts, specifications, and renderings to communicate needs.</p>
+        <button class="btn btn-ghost" style="align-self:flex-start;margin-top:6px" data-goto-tab="renovations">Learn more →</button>
+      </div>
+      <div class="card blueprint" style="padding:24px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <span class="wa-icon" style="width:26px;height:26px;color:var(--color-accent)"><svg viewBox="0 0 24 24" style="display:block" aria-hidden="true"><path d="M6 22V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v18Z"></path><path d="M6 12H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2"></path><path d="M18 9h2a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg></span>
+        <div class="card-kicker" style="margin-top:14px">03</div>
+        <div class="card-title">Full Architectural Services</div>
+        <p class="card-body">Providing full detailed design through construction administration is available.</p>
+        <button class="btn btn-ghost" style="align-self:flex-start;margin-top:6px" data-goto-tab="renovations">Learn more →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wa-container" style="padding-block:8px 64px">
+    <div style="font-family:var(--font-heading);font-weight:600;font-size:13px;line-height:1.12;letter-spacing:.08em;text-transform:uppercase;margin:0 0 6.8px;color:var(--color-accent-text)">Selected Work</div>
+    <h2 style="margin-bottom:32px;max-width:30ch">A sample of recent work</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px" data-grid="work">
+      <figure>
+        <div class="blueprint" style="aspect-ratio:4/3;position:relative">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <img src="assets/auburn-rane-1.jpg" alt="Auburn Tony &amp; Libba Rane Culinary Science Center" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <figcaption style="margin-top:10px;font-size:13px;color:var(--color-text)">Auburn Tony &amp; Libba Rane Culinary Science Center</figcaption>
+      </figure>
+      <figure>
+        <div class="blueprint" style="aspect-ratio:4/3;position:relative">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <img src="assets/tsrb-hester.jpg" alt="Technology Square Research Building lab space" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <figcaption style="margin-top:10px;font-size:13px;color:var(--color-text)">Technology Square Research Building Lab Fit Ups</figcaption>
+      </figure>
+      <figure>
+        <div class="blueprint" style="aspect-ratio:4/3;position:relative">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <img src="assets/stanford-lab.jpg" alt="Porter Drive Renovation lab space" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <figcaption style="margin-top:10px;font-size:13px;color:var(--color-text)">Porter Drive Renovation</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section style="background:var(--color-accent-900);color:var(--color-neutral-100)">
+    <div class="wa-container" style="padding-block:56px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <div>
+        <h2 style="color:var(--color-neutral-100);margin-bottom:6px">Starting a project?</h2>
+        <p style="opacity:.8;margin:0">Feasibility study to full fit up — let's talk specifics.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="tel:2056018713">Call 205.601.8713</a>
+        <a class="btn btn-secondary" href="mailto:ac@wcarchitecture.com" style="border-color:var(--color-neutral-400);color:var(--color-neutral-100)">Email the Studio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- SERVICES / EXPERTISE -->
+<main class="wa-container page" data-page="services" style="padding-block:64px">
+  <div style="font-family:var(--font-heading);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-text);margin-bottom:14px">EXPERTISE</div>
+
+  <div class="tab-intro is-active" data-tab-intro="renovations">
+    <h1 style="max-width:34ch;margin-bottom:16px">Transforming Existing Spaces</h1>
+    <p style="max-width:64ch;font-size:16px;opacity:.82;margin-bottom:48px">Working within existing constraints is always a challenge, but also a significant opportunity. The cost savings and reduced embodied carbon that result are a welcome win. This is an increasingly common need in today's world, particularly when it comes to the reuse of buildings from the 1960s and 1970s.</p>
+  </div>
+  <div class="tab-intro" data-tab-intro="new-construction">
+    <h1 style="max-width:22ch;margin-bottom:16px">From the Ground Up</h1>
+    <p style="max-width:64ch;font-size:16px;opacity:.82;margin-bottom:48px">At times, a new building is needed to meet the needs of a program — whether an addition or a full campus. Site planning, campus integration, and long-term flexibility all become central considerations, ensuring the building serves not only today's needs but those of the years ahead. Expertise listed below reflects projects personally led.</p>
+  </div>
+  <div class="tab-intro" data-tab-intro="interior">
+    <h1 style="max-width:22ch;margin-bottom:16px">Built around lab-specific constraints</h1>
+    <p style="max-width:64ch;font-size:16px;opacity:.82;margin-bottom:48px">At times, a new building is needed to meet the needs of a program — whether an addition or a full campus. Site planning, campus integration, and long-term flexibility all become central considerations, ensuring the building serves not only today's needs but those of the years ahead. Expertise listed below reflects projects personally led.</p>
+  </div>
+  <div class="tab-intro" data-tab-intro="programming">
+    <h1 style="max-width:40ch;margin-bottom:16px">Starting the Journey with a Plan</h1>
+    <p style="max-width:64ch;font-size:16px;opacity:.82;margin-bottom:48px">To begin a new project, a full basis of design or study is often needed. The scope of these can range from a few pages to a large report, depending on the requirements. Services span NIH grant proposals, general space layouts, and programming needs. Below are some examples of studies completed:</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:260px 1fr;gap:40px;margin-bottom:64px;align-items:start" data-grid="services-layout">
+    <div role="tablist" aria-orientation="vertical" aria-label="Areas of expertise" style="display:flex;flex-direction:column;gap:4px;position:sticky;top:96px">
+      <button role="tab" id="tab-renovations" aria-selected="true" aria-controls="panel-renovations" tabindex="0" data-tab="renovations">Architecture – Renovations</button>
+      <button role="tab" id="tab-new-construction" aria-selected="false" aria-controls="panel-new-construction" tabindex="-1" data-tab="new-construction">Architecture – New Construction</button>
+      <button role="tab" id="tab-interior" aria-selected="false" aria-controls="panel-interior" tabindex="-1" data-tab="interior">Interior Architecture</button>
+      <button role="tab" id="tab-programming" aria-selected="false" aria-controls="panel-programming" tabindex="-1" data-tab="programming">Programming</button>
+    </div>
+
+    <div>
+      <div class="tabpanel is-active" role="tabpanel" id="panel-renovations" aria-labelledby="tab-renovations" tabindex="0">
+        <div style="display:flex;flex-direction:column;gap:40px">
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Technology Square Research Building Lab Fit Ups</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">Two lab fit ups for individual principal investigators, approximately 4,650 square feet total for the Georgia Institute of Technology. Each with their own unique challenges of converting dry labs to light wet labs.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Project Architect</span>
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">@ Flad</span>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+              <div class="blueprint" style="position:relative;grid-column:1 / span 3;aspect-ratio:21/9"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/tsrb-overview.jpg" alt="Technology Square lab overview" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;aspect-ratio:4/3"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/tsrb-room.jpg" alt="Technology Square lab space" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;aspect-ratio:4/3"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/tsrb-workshop.jpg" alt="Technology Square workshop space" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;aspect-ratio:4/3"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/tsrb-hester.jpg" alt="Technology Square lab bench area" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Parker H. Petit IBB Building Lab Fit Ups</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">Approximately 3,300 square feet of lab fit up for the Georgia Institute of Technology. Scope included converting existing wet lab into laser labs and procedural rooms.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Project Architect</span>
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">@ Flad</span>
+            </div>
+            <div class="mosaic-grid">
+              <div class="blueprint mosaic-item area-0"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/petit-optics.jpg" alt="Optics lab with blackout curtains" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-1"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/petit-sink.jpg" alt="Sink &amp; drying rack station" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-2"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/petit-storage.jpg" alt="Storage room with wall-mounted shelving" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Bunger Henry Lab Fit Up</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">A small and complex lab fit up of a 1960s building for the Georgia Institute of Technology. Size was approximately 1,100 square feet, and included coordination of glove boxes, lasers, fume hoods and exhaust points.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Project Architect</span>
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">@ Flad</span>
+            </div>
+            <div class="mosaic-grid">
+              <div class="blueprint mosaic-item area-0"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/bunger-glovebox.jpg" alt="Glovebox &amp; isolator chamber" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-1"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/bunger-sink.jpg" alt="Sink &amp; drying rack station" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-2"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/bunger-curtain-room.jpg" alt="Blackout curtain room with covered equipment" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Porter Drive Renovation</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">A 48,380 square foot renovation/conversion of an existing office building to a research laboratory for a confidential client. Labs were designed for specific researcher needs but also for future flexibility.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">@ Flad</span>
+            </div>
+            <div class="mosaic-grid">
+              <div class="blueprint mosaic-item area-0"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/stanford-1.jpg" alt="Lab &amp; corridor" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-1"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/stanford-2.jpg" alt="Open lab bench area" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-2"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/stanford-3.jpg" alt="Biosafety cabinet room" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Biology Building Renovation and Addition</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">A 70,700 square foot renovation and 17,000 square foot addition at the University of West Georgia in Carrollton, GA. The program consists of teaching labs, research labs, lecture halls and student spaces.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Project Architect</span>
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">@ Cooper Carry</span>
+            </div>
+            <div class="mosaic-grid">
+              <div class="blueprint mosaic-item area-0"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/uwg-1.jpg" alt="Atrium &amp; stair" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-1"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/uwg-2.jpg" alt="Ground floor commons" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-2"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/uwg-3.jpg" alt="Teaching lab" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Science and Ag Hill Modernization – North Tower</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">A large scale renovation of the existing Ag Hill North Tower at the University of Georgia. Scope includes specialized design and programming for individual principal investigators. This project is currently in the final design stages at Flad.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">Planner</span>
+              <span class="tag tag-outline">@ Flad</span>
+            </div>
+            <div class="blueprint" style="position:relative;aspect-ratio:16/9"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/ag-hill-1.jpg" alt="Lab bench area" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="panel-new-construction" aria-labelledby="tab-new-construction" tabindex="0">
+        <div style="display:flex;flex-direction:column;gap:40px">
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Medical Education Building</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">An 88,560 square foot new medical education building at the University of Georgia. This building incorporates lecture halls, a clinical suite, simulation suite, anatomy lab and research labs. The complex program stacks into a clean T-shaped floor plate with ample daylighting throughout.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">Planner</span>
+              <span class="tag tag-outline">@ Flad</span>
+            </div>
+            <div class="mosaic-grid">
+              <div class="blueprint mosaic-item area-0"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/msb-entrance.jpg" alt="Medical Education Building entrance rendering" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-1"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/msb-corner.jpg" alt="Medical Education Building corner exterior rendering" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-2"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/msb-courtyard.jpg" alt="Medical Education Building courtyard rendering" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Auburn Tony &amp; Libba Rane Culinary Science Center</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">A 115,000 square foot mixed use teaching laboratory for Auburn University. The building program includes a state of the art culinary teaching facility on levels 1 through 3 and adjacent food hall on level 1. The hospitality program continues on levels 4 through 6 with a 5 diamond boutique hotel and rooftop with pool.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Project Architect</span>
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">Planner</span>
+              <span class="tag tag-outline">@ Cooper Carry</span>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="blueprint" style="position:relative;grid-column:1 / span 2;aspect-ratio:21/9"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/auburn-rane-1.jpg" alt="Exterior — corner view" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;aspect-ratio:4/3"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/auburn-rane-3.jpg" alt="Teaching kitchen" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;aspect-ratio:4/3"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/auburn-rane-4.jpg" alt="Exterior at dusk" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;grid-column:1 / span 2;aspect-ratio:21/9"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/auburn-rane-2.jpg" alt="Outdoor patio &amp; lawn games" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;grid-column:1 / span 2;aspect-ratio:21/9"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/auburn-rane-5.jpg" alt="Café &amp; dining interiors" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Auburn New Pharmaceutical Research Building</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">A 27,400 square foot research building for the Harrison College of Pharmacy at Auburn University. The program provides three levels dedicated to lab research.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">Planner</span>
+              <span class="tag tag-outline">@ Cooper Carry</span>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;aspect-ratio:32/9">
+              <div class="blueprint" style="position:relative"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/auburn-pharm-1.jpg" alt="Exterior at dusk" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/auburn-pharm-2.jpg" alt="Lab &amp; corridor" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Krone Engineered Biosystems Building</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">A 218,880 square foot LEED platinum building providing wet research space for the Georgia Institute of Technology.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Architect</span>
+              <span class="tag tag-outline">@ Cooper Carry</span>
+            </div>
+            <div class="mosaic-grid">
+              <div class="blueprint mosaic-item area-0"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/krone-exterior.jpg" alt="Krone Engineered Biosystems Building exterior" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-1"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/krone-atrium.jpg" alt="Atrium &amp; café" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint mosaic-item area-2"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/krone-lab.jpg" alt="Wet research lab space" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-title" style="font-size:19px;margin-top:16px;margin-bottom:8px">Multidisciplinary Life Sciences Building (unbuilt)</div>
+            <p class="card-body" style="font-size:14px;margin-bottom:14px">A 188,350 square foot research and teaching labs building for the University of California at San Diego. The ground floor was designed for outreach and movement of students as the building was sited at a high pedestrian crossroad. The research labs above provided secure open labs for collaboration with lab support only a few feet away.</p>
+            <div class="wa-tag-row" style="margin-bottom:20px">
+              <span class="tag tag-outline">Lab Planner</span>
+              <span class="tag tag-outline">@ Flad</span>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="blueprint" style="position:relative;grid-column:1 / span 2;aspect-ratio:21/9"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/ucsd-1.jpg" alt="Exterior rendering" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;aspect-ratio:4/3"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/ucsd-2.jpg" alt="Stair &amp; lounge" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;aspect-ratio:4/3"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/ucsd-3.jpg" alt="Collaboration space" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;aspect-ratio:4/3"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/ucsd-4.jpg" alt="Corridor &amp; lockers" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+              <div class="blueprint" style="position:relative;aspect-ratio:4/3"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="assets/ucsd-5.jpg" alt="Teaching lab" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="panel-interior" aria-labelledby="tab-interior" tabindex="0">
+        <div class="mosaic-grid">
+          <div class="blueprint duotone mosaic-item area-0"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="wa-stripe"></div><div class="wa-cap">Casework detail — placeholder</div></div>
+          <div class="blueprint duotone mosaic-item area-1"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="wa-stripe"></div><div class="wa-cap">Finished research suite — placeholder</div></div>
+          <div class="blueprint duotone mosaic-item area-2"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="wa-stripe"></div><div class="wa-cap">Wayfinding &amp; signage — placeholder</div></div>
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="panel-programming" aria-labelledby="tab-programming" tabindex="0">
+        <ul class="study-list">
+          <li>Michigan State Equine Research Feasibility Study</li>
+          <li>UCSD MDLS Building Program and Basis of Design</li>
+          <li>UGA Medical School – Building Program and Basis of Design</li>
+          <li>UGA Ag Hill Phase 4 – Building Program and Basis of Design</li>
+          <li>Auburn Pharmaceutical Building Program and Basis of Design</li>
+          <li>Stillman College Grant Proposal Design</li>
+          <li>Confidential Client – Building Existing Conditions &amp; Test Fits</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="font-family:var(--font-heading);font-weight:600;font-size:13px;line-height:1.12;letter-spacing:.08em;text-transform:uppercase;margin:0 0 6.8px;color:var(--color-accent-text)">Process</div>
+  <h2 style="margin-bottom:32px;max-width:26ch">Four stages, from first sketch to occupancy</h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px" data-grid="process">
+    <div class="card blueprint" style="padding:20px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">01</div>
+      <div class="card-title" style="font-size:16px">Discovery &amp; Programming</div>
+      <p class="card-body">Site visits, stakeholder interviews, and space program development.</p>
+    </div>
+    <div class="card blueprint" style="padding:20px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">02</div>
+      <div class="card-title" style="font-size:16px">Concept &amp; Code Review</div>
+      <p class="card-body">Early layouts tested against zoning, building code, and lab safety codes.</p>
+    </div>
+    <div class="card blueprint" style="padding:20px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">03</div>
+      <div class="card-title" style="font-size:16px">Design Development</div>
+      <p class="card-body">Detailed drawings coordinated with MEP, structural, and lab equipment vendors.</p>
+    </div>
+    <div class="card blueprint" style="padding:20px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-kicker">04</div>
+      <div class="card-title" style="font-size:16px">Documents &amp; Administration</div>
+      <p class="card-body">Permit-ready construction documents and on-site administration through closeout.</p>
+    </div>
+  </div>
+</main>
+
+<!-- ABOUT -->
+<main class="wa-container page" data-page="about" style="padding-block:64px">
+  <div style="display:grid;grid-template-columns:0.8fr 1.2fr;gap:56px;align-items:start" data-grid="about">
+    <div class="blueprint" style="aspect-ratio:3/4;position:relative">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <img src="assets/headshot-color.jpg" alt="Allison Ciafardini" style="width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+    <div>
+      <div style="font-family:var(--font-heading);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-text);margin-bottom:14px">About</div>
+      <h1 style="margin-bottom:20px;max-width:18ch">Sixteen years of architecture. Ten-plus in labs.</h1>
+      <p style="font-size:16px;opacity:.85;margin-bottom:16px">Allison Ciafardini has 16 years of work experience in the architectural industry across the United States. Her career began in Atlanta after the Great Recession, a period that brought significant opportunity as the city grew quickly.</p>
+      <p style="font-size:16px;opacity:.85;margin-bottom:16px">Twelve years were spent working alongside colleagues at Cooper Carry, a period that offered substantial growth in both experience and relationships. That growth spanned leading small restroom renovations independently to overseeing multimillion-dollar high-rise projects. The relationships and projects built during that time remain a source of great pride.</p>
+      <p style="font-size:16px;opacity:.85;margin-bottom:16px">As her career progressed, focus shifted increasingly toward lab design. Conversations with principal investigators and the challenge of designing spaces tailored to their needs became a central interest. This led to a transition into a Lab Planning–focused role at Flad Architects, leading lab planning efforts on projects large and small across the country. Providing for researchers' needs consistently proved to be the most rewarding part of the work.</p>
+      <p style="font-size:16px;opacity:.85;margin-bottom:16px">Now at mid-career, that same focus — creating space for individual needs — has become the foundation of Whitecap Architecture, which offers detailed design and full services tailored to small-scale projects. Expertise in complex lab design and coordination remains central to the practice. Please visit the projects page for references and examples of past work.</p>
+      <p style="font-size:16px;opacity:.85;margin-bottom:28px">Thank you for stopping by.</p>
+      <div class="wa-tag-row" style="margin-bottom:32px">
+        <span class="tag tag-accent">University Labs</span>
+        <span class="tag tag-accent">Medical Facilities</span>
+        <span class="tag tag-accent">Corporate R&amp;D</span>
+      </div>
+      <div class="blueprint" style="padding:24px 20px;display:grid;grid-template-columns:repeat(2,1fr)">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="border-right:1px solid var(--color-divider)">
+          <div style="font-family:var(--font-heading);font-size:32px;color:var(--color-accent)">16</div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin-top:2px">Years in Architecture</div>
+        </div>
+        <div style="padding-left:20px">
+          <div style="font-family:var(--font-heading);font-size:32px;color:var(--color-accent)">10+</div>
+          <div style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin-top:2px">Years in Lab Design</div>
+        </div>
+      </div>
+      <p style="font-size:12px;opacity:.72;margin-top:14px">Licensure and certifications listed on request.</p>
+    </div>
+  </div>
+</main>
+
+<!-- CONTACT -->
+<main class="wa-container page" data-page="contact" style="padding-block:64px">
+  <div style="font-family:var(--font-heading);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-text);margin-bottom:14px">Contact</div>
+  <h1 style="margin-bottom:14px;max-width:20ch">Let's talk about your lab.</h1>
+  <p style="max-width:56ch;font-size:16px;opacity:.82;margin-bottom:48px">The fastest way to start is a call or an email — a quick description of the space and timeline is enough for a first conversation.</p>
+  <div style="display:grid;grid-template-columns:0.85fr 1.15fr;gap:40px;align-items:start" data-grid="contact-layout">
+    <div class="card blueprint" style="padding:28px;display:flex;flex-direction:column;gap:20px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <span class="wa-icon" style="color:var(--color-accent)"><svg viewBox="0 0 24 24" style="display:block" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"></path></svg></span>
+        <div>
+          <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;opacity:.72">Phone</div>
+          <a href="tel:2056018713" style="font-size:16px;font-weight:500">205.601.8713</a>
+        </div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <span class="wa-icon" style="color:var(--color-accent)"><svg viewBox="0 0 24 24" style="display:block" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="1"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span>
+        <div>
+          <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;opacity:.72">Email</div>
+          <a href="mailto:ac@wcarchitecture.com" style="font-size:16px;font-weight:500">ac@wcarchitecture.com</a>
+        </div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <span class="wa-icon" style="color:var(--color-accent)"><svg viewBox="0 0 24 24" style="display:block" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+        <div>
+          <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;opacity:.72">Service Area</div>
+          <div style="font-size:16px">Alabama &amp; Georgia</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card blueprint" style="padding:28px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <h3 style="margin-bottom:4px">Or send a message</h3>
+      <p style="font-size:13px;opacity:.65;margin-bottom:20px">A short project outline works best — building type, scope, and rough timeline.</p>
+      <form id="contact-form" style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div class="field"><label for="contact-name">Name</label><input id="contact-name" class="input" type="text" placeholder="Jordan Reyes"></div>
+          <div class="field"><label for="contact-email">Email</label><input id="contact-email" class="input" type="email" placeholder="you@organization.edu"></div>
+        </div>
+        <div class="field">
+          <label for="contact-project-type">Project Type</label>
+          <select id="contact-project-type" class="input">
+            <option>University Lab</option>
+            <option>Medical / Clinical Facility</option>
+            <option>Corporate R&amp;D</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field"><label for="contact-details">Project Details</label><textarea id="contact-details" class="input" rows="4" placeholder="Building type, approximate square footage, and target timeline"></textarea></div>
+        <button class="btn btn-primary btn-block" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wa-container">
+    <div class="footer-brand">Whitecap Architecture</div>
+    <div class="footer-links">
+      <button class="wa-navlink" data-goto-page="home">Home</button>
+      <button class="wa-navlink" data-goto-tab="renovations">Expertise</button>
+      <button class="wa-navlink" data-goto-page="about">About</button>
+      <button class="wa-navlink" data-goto-page="contact">Contact</button>
+    </div>
+    <div class="footer-contact">205.601.8713 · ac@wcarchitecture.com</div>
+  </div>
+</footer>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>

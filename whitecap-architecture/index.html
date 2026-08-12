@@ -433,8 +433,8 @@
   <div style="font-family:var(--font-heading);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-text);margin-bottom:14px">Contact</div>
   <h1 style="margin-bottom:14px;max-width:20ch">Let's talk about your lab.</h1>
   <p style="max-width:56ch;font-size:16px;opacity:.82;margin-bottom:48px">The fastest way to start is a call or an email — a quick description of the space and timeline is enough for a first conversation.</p>
-  <div style="display:grid;grid-template-columns:0.85fr 1.15fr;gap:40px;align-items:start" data-grid="contact-layout">
-    <div class="card blueprint" style="padding:28px;display:flex;flex-direction:column;gap:20px">
+  <div style="display:grid;grid-template-columns:1fr;justify-items:center" data-grid="contact-layout">
+    <div class="card blueprint" style="padding:28px;display:flex;flex-direction:column;gap:20px;max-width:420px;width:100%">
       <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
       <div style="display:flex;gap:14px;align-items:flex-start">
         <span class="wa-icon" style="color:var(--color-accent)"><svg viewBox="0 0 24 24" style="display:block" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"></path></svg></span>
@@ -459,6 +459,8 @@
       </div>
     </div>
 
+    <!-- Contact form disabled until a form backend (e.g. Formspree) is set up.
+    Restore this card and the two-column grid above once submissions actually go somewhere.
     <div class="card blueprint" style="padding:28px">
       <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
       <h3 style="margin-bottom:4px">Or send a message</h3>
@@ -481,6 +483,7 @@
         <button class="btn btn-primary btn-block" type="submit">Send Message</button>
       </form>
     </div>
+    -->
   </div>
 </main>
 

@@ -172,9 +172,12 @@
     }
   });
 
-  document.getElementById('contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-  });
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+    });
+  }
 
   window.addEventListener('hashchange', () => applyRoute({ moveFocus: true }));
   applyRoute({ moveFocus: false });

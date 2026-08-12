@@ -8,6 +8,7 @@
   const expertiseToggle = document.getElementById('expertise-toggle');
   const expertiseMenu = document.getElementById('expertise-menu');
   const tabOrder = ['renovations', 'new-construction', 'interior', 'programming'];
+  const pageOrder = ['home', 'services', 'about', 'contact'];
 
   let currentPage = 'home';
   let currentTab = 'renovations';
@@ -18,6 +19,45 @@
     about: 'About — Whitecap Architecture',
     contact: 'Contact — Whitecap Architecture',
   };
+
+  function hashForRoute(page, tab) {
+    if (page === 'services' && tab) return tab;
+    if (page === 'home') return '';
+    return page;
+  }
+
+  function routeFromHash() {
+    const raw = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+    if (!raw || raw === 'home') return { page: 'home', tab: currentTab };
+    if (tabOrder.includes(raw)) return { page: 'services', tab: raw };
+    if (pageOrder.includes(raw)) return { page: raw, tab: currentTab };
+    return { page: 'home', tab: currentTab };
+  }
+
+  // Real navigation (nav links, expertise menu, hero CTAs): changes the URL
+  // hash, which creates a browser history entry so back/forward work, and
+  // fires 'hashchange' so applyRoute below actually renders it.
+  function navigate(page, tab) {
+    const hash = hashForRoute(page, tab);
+    if (window.location.hash === `#${hash}` || (!hash && !window.location.hash)) {
+      applyRoute({ moveFocus: true });
+      return;
+    }
+    window.location.hash = hash;
+  }
+
+  // In-page tab switch (pill click / arrow keys) while already on the
+  // Expertise page: keep the URL in sync without spamming browser history.
+  function switchTab(tab) {
+    history.replaceState(null, '', `#${hashForRoute('services', tab)}`);
+    setTab(tab);
+  }
+
+  function applyRoute({ moveFocus = false } = {}) {
+    const { page, tab } = routeFromHash();
+    setPage(page, { moveFocus });
+    if (page === 'services') setTab(tab);
+  }
 
   function setPage(page, { moveFocus = false } = {}) {
     currentPage = page;
@@ -57,8 +97,7 @@
   }
 
   function goToTab(tab) {
-    setPage('services', { moveFocus: true });
-    setTab(tab);
+    navigate('services', tab);
   }
 
   let expertiseCloseTimer = null;
@@ -90,7 +129,7 @@
   }
 
   document.querySelectorAll('[data-goto-page]').forEach(btn => {
-    btn.addEventListener('click', () => setPage(btn.dataset.gotoPage, { moveFocus: true }));
+    btn.addEventListener('click', () => navigate(btn.dataset.gotoPage));
   });
 
   document.querySelectorAll('[data-goto-tab]').forEach(btn => {
@@ -99,7 +138,7 @@
 
   tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      setTab(btn.dataset.tab);
+      switchTab(btn.dataset.tab);
       requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, 0)));
     });
     btn.addEventListener('keydown', (e) => {
@@ -112,7 +151,7 @@
       if (e.key === 'Home') next = 0;
       if (e.key === 'End') next = tabOrder.length - 1;
       const nextTab = tabOrder[next];
-      setTab(nextTab);
+      switchTab(nextTab);
       document.getElementById(`tab-${nextTab}`).focus();
     });
   });
@@ -137,6 +176,6 @@
     e.preventDefault();
   });
 
-  setPage('home');
-  setTab('renovations');
+  window.addEventListener('hashchange', () => applyRoute({ moveFocus: true }));
+  applyRoute({ moveFocus: false });
 })();

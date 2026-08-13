@@ -5,9 +5,9 @@
   --color-bg: #f2f2f3;
   --color-surface: #e9e9ea;
   --color-text: #1d1f20;
-  --color-accent: #5980a6;
+  --color-accent: #007991;
   --color-accent-2: #728fab;
-  --color-accent-text: #416180;
+  --color-accent-text: #006174;
   --color-divider: color-mix(in srgb, #1d1f20 16%, transparent);
   --color-border-strong: color-mix(in srgb, #1d1f20 50%, transparent);
 
@@ -21,15 +21,15 @@
   --color-neutral-800: #424244;
   --color-neutral-900: #2b2b2d;
 
-  --color-accent-100: #eef6ff;
-  --color-accent-200: #d6ebff;
-  --color-accent-300: #b5d9fd;
-  --color-accent-400: #94bce3;
-  --color-accent-500: #749dc4;
-  --color-accent-600: #597ea3;
-  --color-accent-700: #416180;
-  --color-accent-800: #2c455d;
-  --color-accent-900: #1d2d3d;
+  --color-accent-100: #e6f2f4;
+  --color-accent-200: #c7e2e7;
+  --color-accent-300: #94c7d1;
+  --color-accent-400: #61acbb;
+  --color-accent-500: #2e91a5;
+  --color-accent-600: #007991;
+  --color-accent-700: #006174;
+  --color-accent-800: #004957;
+  --color-accent-900: #00303a;
 
   --color-accent-2-100: #eef6ff;
   --color-accent-2-200: #d6ebff;

@@ -52,7 +52,7 @@
   if (tabButtons.length) {
     const tabPanels = document.querySelectorAll('.tabpanel');
     const tabIntros = document.querySelectorAll('.tab-intro');
-    const tabOrder = ['renovations', 'interior', 'programming'];
+    const tabOrder = ['renovations', 'programming'];
     let currentTab = 'renovations';
 
     function setTab(tab) {
